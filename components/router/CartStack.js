@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { StackNavigator } from "react-native";
+import { createStackNavigator } from "react-native";
 import Cart from "../screens/home/Cart.js";
 import Home from "../screens/home/Home.js";
 import DetailProduct from "../screens/home/DetailProduct.js";
 
-export const CartStack = StackNavigator({
+export const CartStack = createStackNavigator({
   Screen_Cart: {
     screen: Cart,
     navigationOptions: {

@@ -1,15 +1,14 @@
 import React from "react";
-import { StackNavigator } from "react-navigation";
+import { createStackNavigator } from "react-navigation";
 import Home from "../screens/home/Home.js";
 import ChangeInfo from "../screens/authentication/ChangeInfo.js";
-import Menu from "../screens/authentication/Menu.js";
 import Authentication from "../screens/authentication/Authentication.js";
 import Cart from "../screens/home/Cart.js";
 import DetailProduct from "../screens/home/DetailProduct.js";
 import ListCart from "../screens/home/ListCart.js";
 import Search from "../screens/home/Search.js";
 
-export const HomeStack = StackNavigator(
+export const HomeStack = createStackNavigator(
   {
     Screen_Home: {
       screen: Home,

@@ -1,6 +1,6 @@
 import { Platform } from "react-native";
 
 const API =
-  Platform.OS === "android" ? "http://nhom5.esy.es" : "http://nhom5.esy.es";
+  Platform.OS === "android" ? "https://shopdacoc.000webhostapp.com" : "https://shopdacoc.000webhostapp.com";
 
 module.exports = API;

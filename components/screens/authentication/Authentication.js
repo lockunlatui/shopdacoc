@@ -3,10 +3,9 @@ import {
   View,
   Text,
   TouchableOpacity,
-  StyleSheet,
-  TextInput,
   Image,
-  ScrollView
+  ScrollView,
+  ImageBackground
 } from 'react-native';
 import logo from '../../../images/logo.png';
 import register from '../../api/register.js';
@@ -38,7 +37,7 @@ export default class Authentication extends Component {
       ? <ComponentSignIn navigation={this.props.navigation} />
       : <ComponentSignUp gotoSignIn={this.gotoSignIn.bind(this)} />;
     return (
-      <Image
+      <ImageBackground
         style={style.backgroundImage}
         source={require('../../../images/background.png')}
       >
@@ -78,7 +77,7 @@ export default class Authentication extends Component {
             </View>
           </View>
         </ScrollView>
-      </Image>
+      </ImageBackground>
     );
   }
 }

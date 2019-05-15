@@ -1,25 +1,15 @@
 import React, { Component } from "react";
 import {
-  TouchableOpacity,
   View,
-  Text,
-  Image,
-  Dimensions,
-  StyleSheet,
   TextInput,
   ScrollView
 } from "react-native";
-import AyMenu from "../../../images/menu.png";
-import AyCart from "../../../images/cart.png";
 import Category from "./Category.js";
 import Products from "./Products.js";
 import Header from "./Header.js";
-import logo from "../../../images/logo.png";
 import global from "../../Global.js";
 import initData from "../../api/initData.js";
 import style from "../../../Style.js";
-import Search from "./Search.js";
-const { height, width } = Dimensions.get("window");
 
 export default class Home extends Component {
   constructor(props) {

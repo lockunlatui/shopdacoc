@@ -35,7 +35,7 @@ export default class Header extends Component {
         <View style={style.row1}>
           <TouchableOpacity
             onPress={() => {
-              this.props.navigation.navigate("DrawerOpen");
+              this.props.navigation.openDrawer();
             }}
           >
             <Image source={AyMenu} style={style.iconStyle} />

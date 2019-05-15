@@ -5,8 +5,7 @@ import {
   Text,
   Image,
   Dimensions,
-  StyleSheet,
-  TextInput
+ ImageBackground
 } from "react-native";
 import Swiper from "react-native-swiper";
 import style from "../../../Style.js";
@@ -51,14 +50,14 @@ export default class Category extends Component {
               }}
               key={e.ID}
             >
-              <Image
+              <ImageBackground
                 source={{ uri: `${url}${e.IMAGE}` }}
                 style={style.imageStyle}
               >
                 <Text style={style.namePS}>
                   {e.TENLOAISP}
                 </Text>
-              </Image>
+              </ImageBackground>
             </TouchableOpacity>
           )}
         </Swiper>

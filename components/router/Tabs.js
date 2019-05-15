@@ -1,8 +1,6 @@
 import React from "react";
-import { TabNavigator, StackNavigator } from "react-navigation";
+import { createBottomTabNavigator, createAppContainer } from "react-navigation";
 import { StyleSheet, Image } from "react-native";
-import Home from "../screens/home/Home.js";
-import ChangeInfo from "../screens/authentication/ChangeInfo.js";
 import { SaleStack } from "./SaleStack.js";
 import { NewStack } from "./NewStack.js";
 import { HomeStack } from "./HomeStack.js";
@@ -12,7 +10,7 @@ import AySale from "../../images/sale.png";
 import AyNew from "../../images/new.png";
 import AyContacts from "../../images/contacts.png";
 
-export const Tabs = TabNavigator(
+const Tabs = createBottomTabNavigator(
   {
     Home: {
       screen: HomeStack,
@@ -60,7 +58,6 @@ export const Tabs = TabNavigator(
     }
   },
   {
-    ...TabNavigator.Presets.AndroidTopTabs,
     tabBarPosition: "bottom",
     tabBarOptions: {
       showIcon: true,
@@ -83,3 +80,5 @@ const styles = StyleSheet.create({
     height: 20
   }
 });
+
+export default createAppContainer(Tabs);

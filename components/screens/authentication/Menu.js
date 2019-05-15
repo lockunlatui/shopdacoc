@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 import avatar from '../../../images/avatar.png';
 import signin from '../../../images/signin.png';
 import changeinfo from '../../../images/changeinfo.png';

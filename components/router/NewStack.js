@@ -1,5 +1,5 @@
 import React from "react";
-import { StackNavigator } from "react-navigation";
+import { createStackNavigator } from "react-navigation";
 import News from "../screens/home/News.js";
 import ChangeInfo from "../screens/authentication/ChangeInfo.js";
 import Menu from "../screens/authentication/Menu.js";
@@ -7,7 +7,7 @@ import DetailProduct from "../screens/home/DetailProduct.js";
 import Cart from "../screens/home/Cart.js";
 import Authentication from "../screens/authentication/Authentication.js";
 
-export const NewStack = StackNavigator(
+export const NewStack = createStackNavigator(
   {
     Screen_New: {
       screen: News,
